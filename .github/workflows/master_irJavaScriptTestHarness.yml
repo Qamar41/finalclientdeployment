@@ -51,7 +51,7 @@ jobs:
       id: deploy-to-webapp
       uses: azure/webapps-deploy@v2
       with:
-        app-name: 'irJavaScriptTestHarness'
+        app-name: 'finalclientdeploy'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_e14a6feedf9a43088f4a17c330cffd8c }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile}}
         package: .
